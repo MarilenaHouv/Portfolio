@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Eleni's Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script type="module"
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+<script nomodule
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Carter One] bg-gradient-to-t from-[#DBC3DB] to-[#f6f4f0] h-screen">
+    <header class="py-4">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class= "w-16" src="assets/emh-logo-transparent.png" alt="...">
+                <a href="#home"></a>
+            </div>
+<div class="nav-links md:static absolute bg-white md:w-[70%] w-full flex justify-center items-center px-10 py-4 rounded-full shadow-md">                <ul class="flex md:flex-row flex-col flex md:items-center md:gap-[4vw] gap-8">
+                    <li><a class=" inline-block hover:text-[#87ceeb] text-lg transition-all duration-300 ease-in-out hover:scale-[2]" href="#home">About</a></li>
+                    <li><a class="inline-block hover:text-[#87ceeb] text-lg transition-all duration-300 ease-in-out hover:scale-[2]" href="#projects">Projects</a></li>
+                    <li><a class="inline-block hover:text-[#87ceeb] text-lg transition-all duration-300 ease-in-out hover:scale-[2]" href="#resume">Resume</a></li>
+                    <li><a class="inline-block hover:text-[#87ceeb] text-lg transition-all duration-300 ease-in-out hover:scale-[2]" href="#contact">Socials</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon name="menu" class="text-3xl cursor-pointer md:hidden" onclick="onToggleMenu(this)"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Eleni's Portfolio: Creative Software Developemnt</h1>
+        <div class="intro">Welcome to my portfolio! I'm a passionate software developer with a keen eye for design and user experience.</div>
+        <div class="featured">Featured Projects</div>
+        <h2>Projects</h2>
+        <div class="project">
+            <div class="project-header">
+                <h2 class="project-title">First Project</h2>
+                <span class="project-tag">desktop game</span>
+            </div>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="project-images" data-link="">
+                <video preload="metadata" src="assets/placehold.mp4" class="project-image device" autoplay loop></video>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
