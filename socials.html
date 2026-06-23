@@ -19,100 +19,68 @@
 </head>
 
 <body class="font-[Coiny] bg-gradient-to-t from-[#DBC3DB] to-[#f6f4f0] min-h-screen">
-
-<!-- navbar -->
-<header class="py-4">
-    <nav class="flex justify-between items-center w-[92%] mx-auto">
-
-       <!-- logo -->
-        <div>
-            <a href="index.html">
-                <img class="w-20 md:w-24" src="assets/emh-logo-transparent.png" alt="logo">
-            </a>
+    <header class="flex justify-center mt-6">
+        <div class="window w-[900px]">
+            <div class="window-header">
+                <div class="window-buttons">
+                    <span class="close-btn"></span>
+                    <span class="min-btn"></span>
+                    <span class="max-btn"></span>
+                </div>
+                Main Menu
+                </div>
+                <div class="window-content py-4">
+                    <ul class="flex justify-center gap-8">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="socials.html">Socials</a></li>
+                    </ul>
+            </div>
         </div>
+        </header>
 
-        <!-- nav box and links -->
-        <div class="nav-links md:static absolute bg-white md:w-[70%] w-full left-0 top-[-100%] md:top-auto 
-                    flex justify-center items-center px-10 py-4 
-                    rounded-full shadow-md">
+    <main class="flex justify-center mt-8">
+        <div class="window w-[900px]">
+            <div class="window-header">
+                <div class="window-buttons">
+                    <span class="close-btn"></span>
+                    <span class="min-btn"></span>
+                    <span class="max-btn"></span>
+                </div>
+                Socials
+                </div>
+                <div class="window-content">
+                    <div id="tv-container" class="relative w-full overflow-hidden rounded-3xl border-4 border-[#f7c8df] bg-[#fff8f5]">
+                        <div id="monitor-screen" class="absolute inset-0 bg-[url('assets/pink_monitor.png')] bg-center"
+                            style="background-size: 90% auto;"></div>
+                        <div class="relative h-[0]" style="padding-bottom:71.1%;"></div>
 
-            <ul class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14 text-center">
-
-                <li>
-                    <a class="inline-block text-lg transition-all duration-300 ease-in-out 
-                              hover:scale-150 hover:-translate-y-1 hover:text-[#87ceeb]"
-                       href="index.html#home">
-                        About
+                    <a href="https://www.linkedin.com/in/eleni-mhouvarda/" target="_blank"
+                        class="social-card absolute top-[28%] left-[33%]">
+                        <ion-icon class="social-folder-icon" name="folder"></ion-icon>
+                        <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+                        <span>LinkedIn</span>
+                        </a>
+                    <a href="https://github.com/MarilenaHouv" target="_blank" class="social-card absolute top-[28%] right-[28%]">
+                        <ion-icon class="social-folder-icon" name="folder"></ion-icon>
+                        <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                        <span>GitHub</span>
                     </a>
-                </li>
-
-                <li>
-                    <a class="inline-block text-lg transition-all duration-300 ease-in-out 
-                              hover:scale-150 hover:-translate-y-1 hover:text-[#87ceeb]"
-                       href="index.html#projects">
-                        Projects
+                    <a href="mailto:eleni.mariah04@gmail.com" class="social-card absolute bottom-[20%] left-[33%]">
+                        <ion-icon class="social-folder-icon" name="folder"></ion-icon>
+                        <ion-icon class="social-icon" name="mail"></ion-icon>
+                        <span>Email</span>
                     </a>
-                </li>
-
-                <li>
-                    <a class="inline-block text-lg transition-all duration-300 ease-in-out 
-                              hover:scale-150 hover:-translate-y-1 hover:text-[#87ceeb]"
-                       href="resume.html">
-                        Resume
+                    <a href="tel:+18045938726" class="social-card absolute bottom-[20%] right-[28%]">
+                        <ion-icon class="social-folder-icon" name="folder"></ion-icon>
+                        <ion-icon class="social-icon" name="call"></ion-icon>
+                        <span>Phone</span>
                     </a>
-                </li>
-
-                <li>
-                    <a class="inline-block text-lg transition-all duration-300 ease-in-out 
-                              hover:scale-150 hover:-translate-y-1 hover:text-[#87ceeb]"
-                       href="socials.html">
-                        Socials
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-
-        <!-- navbar toggle icon-->
-        <div class="flex items-center gap-6">
-            <ion-icon name="menu" class="text-3xl cursor-pointer md:hidden"
-                      onclick="onToggleMenu(this)"></ion-icon>
-        </div>
-
-    </nav>
-</header>
-<main class="flex justify-center items-center mt-8">
-    <div id="tv-container" class="relative w-[95vw] max-w-[1100px] aspect-[1557/1107] overflow-hidden">
-        <div id="monitor-screen" class="absolute inset-0 bg-[url('assets/pink_monitor.png')] bg-cover bg-center"></div>
-
-       <a href="https://www.linkedin.com/in/eleni-mhouvarda/"
-   target="_blank"
-   class="social-card absolute top-[28%] left-[33%]">
-    <ion-icon name="logo-linkedin"></ion-icon>
-    <span>LinkedIn</span>
-</a>
-
-<a href="https://github.com/MarilenaHouv"
-   target="_blank"
-   class="social-card absolute top-[28%] right-[28%]">
-    <ion-icon name="logo-github"></ion-icon>
-    <span>GitHub</span>
-</a>
-
-<a href="mailto:eleni.mariah04@gmail.com"
-   class="social-card absolute bottom-[20%] left-[33%]">
-    <ion-icon name="mail"></ion-icon>
-    <span>Email</span>
-</a>
-
-<a href="tel:+18045938726"
-   class="social-card absolute bottom-[20%] right-[28%]">
-    <ion-icon name="call"></ion-icon>
-    <span>Phone</span>
-</a>
-    </div>
-</main>
-
+                    </div>
+            </div>
+            </div>
+    </main>
 </body>
 </html>
 

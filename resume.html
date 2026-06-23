@@ -9,107 +9,57 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 </head>
 
 <body class="font-[Coiny] bg-gradient-to-t from-[#DBC3DB] to-[#f6f4f0] min-h-screen">
+    <header class="flex justify-center mt-6">
+        <div class="window w-[900px]">
+            <div class="window-header">
+                <div class="window-buttons">
+                    <span class="close-btn"></span>
+                    <span class="min-btn"></span>
+                    <span class="max-btn"></span>
+                </div>
+                Main Menu
+                </div>
+                <div class="window-content py-4">
+                    <ul class="flex justify-center gap-8">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="socials.html">Socials</a></li>
+                    </ul>
+                </div>
+                </div>
+                </header>
 
-<!-- navbar -->
-<header class="py-4">
-    <nav class="flex justify-between items-center w-[92%] mx-auto">
-
-       <!-- logo -->
-        <div>
-            <a href="index.html">
-                <img class="w-20 md:w-24" src="assets/emh-logo-transparent.png" alt="logo">
-            </a>
-        </div>
-
-        <!-- nav box and links -->
-        <div class="nav-links md:static absolute bg-white md:w-[70%] w-full 
-                    flex justify-center items-center px-10 py-4 
-                    rounded-full shadow-md">
-
-            <ul class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14 text-center">
-
-                <li>
-                    <a class="inline-block text-lg transition-all duration-300 ease-in-out 
-                              hover:scale-150 hover:-translate-y-1 hover:text-[#87ceeb]"
-                       href="index.html#home">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a class="inline-block text-lg transition-all duration-300 ease-in-out 
-                              hover:scale-150 hover:-translate-y-1 hover:text-[#87ceeb]"
-                       href="index.html#projects">
-                        Projects
-                    </a>
-                </li>
-
-                <li>
-                    <a class="inline-block text-lg transition-all duration-300 ease-in-out 
-                              hover:scale-150 hover:-translate-y-1 hover:text-[#87ceeb]"
-                       href="resume.html">
-                        Resume
-                    </a>
-                </li>
-
-                <li>
-                    <a class="inline-block text-lg transition-all duration-300 ease-in-out 
-                              hover:scale-150 hover:-translate-y-1 hover:text-[#87ceeb]"
-                       href="index.html#contact">
-                        Socials
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-
-        <!-- navbar toggle icon-->
-        <div class="flex items-center gap-6">
-            <ion-icon name="menu" class="text-3xl cursor-pointer md:hidden"
-                      onclick="onToggleMenu(this)"></ion-icon>
-        </div>
-
-    </nav>
-</header>
-
-<!-- resume pdf -->
-<div class="container mx-auto px-6 py-10">
-
-    <h1 class="text-4xl font-bold mb-8 text-center text-[#E485B1]">
-        Resume
-    </h1>
-
-    <div class="bg-white rounded-3xl shadow-lg p-6 w-full max-w-5xl mx-auto border-4 border-[#E485B1]">
-
-        <div class="flex justify-between items-center mb-4">
-            <h2 class="text-xl font-semibold text-[#E485B1]">My Resume</h2>
-
-            <a href="assets/Houvarda_Eleni_Resume_2026.pdf"
-               download
-               class="text-[#E485B1] hover:underline">
-                Download PDF
-            </a>
-        </div>
-
-        <!-- PDF EMBED -->
-        <iframe
-            src="assets/Houvarda_Eleni_Resume_2026.pdf"
-            class="w-full h-[800px] rounded-2xl">
-        </iframe>
-
-    </div>
-</div>
-
-<script src="script.js"></script>
-
-</body>
+    <main class="flex justify-center mt-8">
+        <div class="window w-[900px]">
+            <div class="window-header">
+                <div class="window-buttons">
+                    <span class="close-btn"></span>
+                    <span class="min-btn"></span>
+                    <span class="max-btn"></span>
+                </div>
+                Resume
+            </div>
+            <div class="window-content">
+                <div class="text-center mb-8">
+                    <h1 class="text-4xl font-bold text-[#E485B1]">Resume</h1>
+                </div>
+                <div class="bg-white rounded-3xl shadow-lg p-6 w-full mx-auto border-4 border-[#E485B1]">
+                    <div class="flex flex-col lg:flex-row justify-between items-center mb-6 gap-6">
+                        <a href="assets/Houvarda_Eleni_Resume_2026.pdf" download class="text-[#E485B1] hover:underline">Download
+                            PDF</a>
+                    </div>
+                    <iframe src="assets/Houvarda_Eleni_Resume_2026.pdf"
+                        class="w-full h-[800px] rounded-2xl border-2 border-[#f7c8df]"></iframe>
+                </div>
+                    </div>
+                    </div>
+                    </main>
+                    
+                    </body>
 </html>
