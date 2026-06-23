@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Eleni's Resume</title>
+    <title>Eleni's Portfolio</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,7 @@
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+  
 </head>
 
 <body class="font-[Coiny] bg-gradient-to-t from-[#DBC3DB] to-[#f6f4f0] min-h-screen">
@@ -31,7 +32,7 @@
         </div>
 
         <!-- nav box and links -->
-        <div class="nav-links md:static absolute bg-white md:w-[70%] w-full 
+        <div class="nav-links md:static absolute bg-white md:w-[70%] w-full left-0 top-[-100%] md:top-auto 
                     flex justify-center items-center px-10 py-4 
                     rounded-full shadow-md">
 
@@ -64,7 +65,7 @@
                 <li>
                     <a class="inline-block text-lg transition-all duration-300 ease-in-out 
                               hover:scale-150 hover:-translate-y-1 hover:text-[#87ceeb]"
-                       href="index.html#contact">
+                       href="socials.html">
                         Socials
                     </a>
                 </li>
@@ -80,36 +81,38 @@
 
     </nav>
 </header>
+<main class="flex justify-center items-center mt-8">
+    <div id="tv-container" class="relative w-[95vw] max-w-[1100px] aspect-[1557/1107] overflow-hidden">
+        <div id="monitor-screen" class="absolute inset-0 bg-[url('assets/pink_monitor.png')] bg-cover bg-center"></div>
 
-<!-- resume pdf -->
-<div class="container mx-auto px-6 py-10">
+       <a href="https://www.linkedin.com/in/eleni-mhouvarda/"
+   target="_blank"
+   class="social-card absolute top-[28%] left-[33%]">
+    <ion-icon name="logo-linkedin"></ion-icon>
+    <span>LinkedIn</span>
+</a>
 
-    <h1 class="text-4xl font-bold mb-8 text-center text-[#E485B1]">
-        Resume
-    </h1>
+<a href="https://github.com/MarilenaHouv"
+   target="_blank"
+   class="social-card absolute top-[28%] right-[28%]">
+    <ion-icon name="logo-github"></ion-icon>
+    <span>GitHub</span>
+</a>
 
-    <div class="bg-white rounded-3xl shadow-lg p-6 w-full max-w-5xl mx-auto border-4 border-[#E485B1]">
+<a href="mailto:eleni.mariah04@gmail.com"
+   class="social-card absolute bottom-[20%] left-[33%]">
+    <ion-icon name="mail"></ion-icon>
+    <span>Email</span>
+</a>
 
-        <div class="flex justify-between items-center mb-4">
-            <h2 class="text-xl font-semibold text-[#E485B1]">My Resume</h2>
-
-            <a href="assets/Houvarda_Eleni_Resume_2026.pdf"
-               download
-               class="text-[#E485B1] hover:underline">
-                Download PDF
-            </a>
-        </div>
-
-        <!-- PDF EMBED -->
-        <iframe
-            src="assets/Houvarda_Eleni_Resume_2026.pdf"
-            class="w-full h-[800px] rounded-2xl">
-        </iframe>
-
+<a href="tel:+18045938726"
+   class="social-card absolute bottom-[20%] right-[28%]">
+    <ion-icon name="call"></ion-icon>
+    <span>Phone</span>
+</a>
     </div>
-</div>
-
-<script src="script.js"></script>
+</main>
 
 </body>
 </html>
+

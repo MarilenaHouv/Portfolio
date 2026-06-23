@@ -8,6 +8,7 @@
 
 /* layout and typography */
 
+
 /* body {
   font-family: "DM Sans", sans-serif;
   background-color: #ffffff;
@@ -35,6 +36,9 @@ p {
 nav{
 border-radius: 16px;
 }
+nav a:hover {
+    color: #E485B1 !important;
+}
 .intro {
   max-width: 700px;
   margin-bottom: 20px;
@@ -49,11 +53,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-a:hover {
-  text-decoration: bold;
-}
-
 
 .featured {
     margin: 30px 0 50px;
@@ -171,4 +170,36 @@ a:hover {
     .container {
         padding: 30px 16px;
     }
+}
+.social-card {
+    width: 180px;
+    height: 180px;
+
+    background: #E485B1;
+    border-radius: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+
+    color: white;
+    text-decoration: none;
+
+    border: 5px solid #f7c8df;
+    box-shadow:
+        inset 0 4px 0 rgba(255, 255, 255, .35),
+        0 8px 20px rgba(0, 0, 0, .15);
+
+    transition: all .3s ease;
+}
+
+.social-card ion-icon {
+    font-size: 3rem;
+}
+
+.social-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(255, 143, 194, 0.4);
 }
