@@ -3,292 +3,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Eleni's Portfolio</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="stylesheet" href="styles.css">
+    <title>Eleni Houvarda | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="font-[Coiny]">
+<body>
     <header class="dock-shell">
         <nav class="dock-nav" aria-label="Main navigation">
-            <a href="#about" class="dock-item">
-                <span class="dock-bubble">About</span>
-            </a>
-            <a href="#projects" class="dock-item">
-                <span class="dock-bubble">Projects</span>
-            </a>
-            <a href="#resume" class="dock-item">
-                <span class="dock-bubble">Resume</span>
-            </a>
-            <a href="#socials" class="dock-item">
-                <span class="dock-bubble">Socials</span>
-            </a>
+            <a href="#about" class="dock-item"><span class="dock-bubble">About</span></a>
+            <a href="#projects" class="dock-item"><span class="dock-bubble">Projects</span></a>
+            <a href="#resume" class="dock-item"><span class="dock-bubble">Resume</span></a>
+            <a href="#socials" class="dock-item"><span class="dock-bubble">Socials</span></a>
         </nav>
     </header>
 
-    <main class="flex flex-col items-center gap-8 mt-8">
-        <section id="about" class="w-full flex justify-center">
-            <div class="window page-shell">
+    <main>
+        <section id="about" class="hero-section page-shell">
+            <div class="hero-copy">
+                <p class="eyebrow">Automation engineer intern / software builder / healthcare tech thinker</p>
+                <h1>Hello World, I'm <span>Eleni Houvarda.</span></h1>
+                <p class="hero-text">
+                    Recent James Madison University graduate based in Richmond, Virginia, building practical software across
+                    AI,
+                    web development, industrial automation, and healthcare research. I like tools that feel human, solve
+                    real
+                    problems, and make complicated things easier to use.
+                </p>
+                <div class="hero-actions" aria-label="Primary links">
+                    <a href="#projects" class="button button-primary">View Projects</a>
+                    <a href="assets/Houvarda_Eleni_Resume_2026.pdf" class="button button-secondary" download>Download
+                        Resume</a>
+                </div>
+            </div>
+    
+            <aside class="profile-window window" aria-label="Profile card">
                 <div class="window-header">
-                    <div class="window-buttons">
+                    <div class="window-buttons" aria-hidden="true">
                         <span class="close-btn"></span>
                         <span class="min-btn"></span>
                         <span class="max-btn"></span>
                     </div>
-                    Eleni's Profile
+                    Eleni.exe
                 </div>
-                <div class="window-content">
-                    <div class="flex flex-col lg:flex-row items-center gap-10">
-                        <img src="assets/profile_img.png" class="w-64 rounded-3xl shadow-lg" alt="Portrait of Eleni">
-                        <div>
-                            <h2 class="text-2xl">
-                                Hello World! I'm...
-                            </h2>
-                            <div class="bg-white rounded-full px-8 py-5 shadow-md inline-block mt-3">
-                                <h1 class="text-5xl">
-                                    Eleni Houvarda
-                                </h1>
-                            </div>
-                            <p class="mt-6 max-w-xl text-xl">
-                                I am a recent graduate from James Madison University (JMU) located in Richmond, VA. I am passionate about helping
-                                others, being innovative, and working hard to solve problems. I am a type 1 diabetic and have an interest in the
-                                health and pharmacy field.
-                            </p>
-                            <div class="mt-6 inline-flex items-center gap-2 rounded-full bg-white/85 px-4 py-2 shadow-sm text-lg text-[#E485B1]">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    class="h-5 w-5 shrink-0 fill-current"
-                                    aria-hidden="true"
-                                >
-                                    <path d="M12 2C8.14 2 5 5.14 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"></path>
-                                </svg>
-                                <span>Richmond, Virginia</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="w-full flex justify-center">
-            <div class="grid gap-6 lg:grid-cols-3 page-shell">
-                <div class="window bg-white/90 shadow-lg border-2 border-[#f7c8df]">
-                    <div class="window-header">
-                        <div class="window-buttons">
-                            <span class="close-btn"></span>
-                            <span class="min-btn"></span>
-                            <span class="max-btn"></span>
-                        </div>
-                        Skills
-                    </div>
-                    <div class="window-content p-6">
-                        <ul class="space-y-2 text-lg text-[#5a3f2f]">
-                            <li>&bull; Frontend: HTML, CSS, JavaScript</li>
-                            <li>&bull; React &amp; Tailwind</li>
-                            <li>&bull; Python &amp; SQL</li>
-                            <li>&bull; PLC &amp; HMIs</li>
-                            <li>&bull; Cucumber &amp; Playwright</li>
-                            <li>&bull; Power BI &amp; Dataiku</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="window bg-white/90 shadow-lg border-2 border-[#f7c8df]">
-                    <div class="window-header">
-                        <div class="window-buttons">
-                            <span class="close-btn"></span>
-                            <span class="min-btn"></span>
-                            <span class="max-btn"></span>
-                        </div>
-                        Interests
-                    </div>
-                    <div class="window-content p-6">
-                        <ul class="space-y-2 text-lg text-[#5a3f2f]">
-                            <li>&bull; Pharmacy</li>
-                            <li>&bull; Problem-solving</li>
-                            <li>&bull; Learning new tools</li>
-                            <li>&bull; Travel</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="window bg-white/90 shadow-lg border-2 border-[#f7c8df]">
-                    <div class="window-header">
-                        <div class="window-buttons">
-                            <span class="close-btn"></span>
-                            <span class="min-btn"></span>
-                            <span class="max-btn"></span>
-                        </div>
-                        Quick Experience
-                    </div>
-                    <div class="window-content p-6">
-                        <p class="text-lg text-[#5a3f2f] leading-relaxed">
-                            Merck &amp; Co, Richmond National Insurance
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="w-full flex justify-center">
-            <div class="window page-shell">
-                <div class="window-header">
-                    <div class="window-buttons">
-                        <span class="close-btn"></span>
-                        <span class="min-btn"></span>
-                        <span class="max-btn"></span>
-                    </div>
-                    Projects Explorer
-                </div>
-
-                <div class="window-content">
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="bg-white/90 border-2 border-[#f7c8df] rounded-2xl shadow-lg p-6 hover-pop hover-pop--project">
-                            <div class="h-40 bg-[#DBC3DB] rounded-xl mb-4"></div>
-                            <h2 class="text-xl mb-2">OVRBOOKD</h2>
-                            <p class="text-[#5a3f2f] mb-3">
-                                // INSERT SHORT DESCRIPTION
-                            </p>
-                            <p class="text-sm text-gray-500 mb-4">
-                                // INSERT SKILLS USED
-                            </p>
-                            <div class="flex gap-3">
-                                <a href="#" class="px-4 py-2 bg-[#E485B1] text-white rounded-xl">
-                                    GitHub
-                                </a>
-                                <a href="#" class="px-4 py-2 bg-[#E485B1] text-white rounded-xl">
-                                    Live
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="bg-white/90 border-2 border-[#f7c8df] rounded-2xl shadow-lg p-6 hover-pop hover-pop--project">
-                            <div class="h-40 bg-[#DBC3DB] rounded-xl mb-4"></div>
-                            <h2 class="text-xl mb-2">MyMovieLover.com</h2>
-                            <p class="text-[#5a3f2f] mb-3">
-                                // INSERT SHORT DESCRIPTION
-                            </p>
-                            <p class="text-sm text-gray-500 mb-4">
-                                // INSERT SKILLS USED
-                            </p>
-                            <div class="flex gap-3">
-                                <a href="#" class="px-4 py-2 bg-[#E485B1] text-white rounded-xl">
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="bg-white/90 border-2 border-[#f7c8df] rounded-2xl shadow-lg p-6 hover-pop hover-pop--project">
-                            <div class="h-40 bg-[#DBC3DB] rounded-xl mb-4"></div>
-                            <h2 class="text-xl mb-2">Spam Email Detection</h2>
-                            <p class="text-[#5a3f2f] mb-3">
-                                // INSERT SHORT DESCRIPTION
-                            </p>
-                            <p class="text-sm text-gray-500 mb-4">
-                                // INSERT SKILLS USED
-                            </p>
-                            <div class="flex gap-3">
-                                <a href="#" class="px-4 py-2 bg-[#E485B1] text-white rounded-xl">
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="bg-white/90 border-2 border-[#f7c8df] rounded-2xl shadow-lg p-6 hover-pop hover-pop--project">
-                            <div class="h-40 bg-[#DBC3DB] rounded-xl mb-4"></div>
-                            <h2 class="text-xl mb-2">Power BI Project</h2>
-                            <p class="text-[#5a3f2f] mb-3">
-                                // INSERT SHORT DESCRIPTION
-                            </p>
-                            <p class="text-sm text-gray-500 mb-4">
-                                // INSERT SKILLS
-                            </p>
-                            <div class="flex gap-3">
-                                <a href="#" class="px-4 py-2 bg-[#E485B1] text-white rounded-xl">
-                                    View
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="resume" class="w-full flex justify-center">
-            <div class="window page-shell">
-                <div class="window-header">
-                    <div class="window-buttons">
-                        <span class="close-btn"></span>
-                        <span class="min-btn"></span>
-                        <span class="max-btn"></span>
-                    </div>
-                    Resume
-                </div>
-                <div class="window-content">
-                    <div class="text-center mb-8">
-                        <h1 class="text-4xl font-bold text-[#E485B1]">Resume</h1>
-                    </div>
-                    <div class="bg-white rounded-3xl shadow-lg p-6 w-full mx-auto border-4 border-[#E485B1]">
-                        <div class="flex flex-col lg:flex-row justify-between items-center mb-6 gap-6">
-                            <a href="assets/Houvarda_Eleni_Resume_2026.pdf" download class="text-[#E485B1] hover:underline">
-                                Download PDF
+                <div class="window-content profile-card">
+                    <img src="assets/profile_img.png" alt="Portrait of Eleni Houvarda" class="profile-photo">
+                    <div class="profile-meta">
+                        <p class="profile-name">Eleni Houvarda</p>
+                        <div class="location-card">
+                            <a href="https://www.google.com/maps?q=Richmond,+Virginia" target="_blank" rel="noreferrer"
+                                class="location-pill">
+                                <span aria-hidden="true">VA</span>
+                                Richmond, Virginia
                             </a>
+                            <div class="location-map-panel" aria-hidden="true">
+                                <iframe title="Richmond, Virginia map preview"
+                                    src="https://www.google.com/maps?q=Richmond,+Virginia&amp;z=11&amp;output=embed" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
-                        <iframe
-                            src="assets/Houvarda_Eleni_Resume_2026.pdf"
-                            class="w-full h-[75vh] rounded-2xl border-2 border-[#f7c8df]"
-                        ></iframe>
-                    </div>
-                </div>
-            </div>
+                        </div>
+                        </div>
+            </aside>
         </section>
 
-        <section id="socials" class="w-full flex justify-center">
-            <div class="window page-shell">
+        <section class="page-shell snapshot-grid" aria-label="Highlights">
+            <article class="mini-window window">
                 <div class="window-header">
-                    <div class="window-buttons">
+                    <div class="window-buttons" aria-hidden="true">
                         <span class="close-btn"></span>
                         <span class="min-btn"></span>
                         <span class="max-btn"></span>
                     </div>
-                    Socials
-                </div>
+                    Skills
+                    </div>
                 <div class="window-content">
-                    <div id="tv-container" class="w-full flex justify-center">
-                        <div id="tv-shell" class="relative">
-                            <img
-                                id="monitor-screen"
-                                src="assets/pink_monitor.png"
-                                alt=""
-                                class="block w-full h-auto pointer-events-none select-none"
-                            >
+                    <div class="tag-cloud">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>PLC & HMI</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>React</span>
+                        <span>Angular</span>
+                        <span>AWS</span>
+                        <span>Playwright</span>
+                        <span>Power BI</span>
+                        <span>Dataiku</span>
+                    </div>
+                </div>
+            </article>
 
-                            <div class="social-stage">
-                                <a href="https://www.linkedin.com/in/eleni-mhouvarda/" target="_blank" rel="noreferrer"
-                                    class="social-card linkedin" aria-label="LinkedIn">
-                                    <img src="assets/icons/linkedin.png" alt="LinkedIn icon">
-                                </a>
-                                <a href="https://github.com/MarilenaHouv" target="_blank" rel="noreferrer" class="social-card github"
-                                    aria-label="GitHub">
-                                    <img src="assets/icons/github.png" alt="GitHub icon">
-                                </a>
-                                <a href="mailto:eleni.mariah04@gmail.com" class="social-card email" aria-label="Email">
-                                    <img src="assets/icons/email.png" alt="Email icon">
-                                </a>
-                                <a href="tel:+18045938726" class="social-card phone" aria-label="Phone">
-                                    <img src="assets/icons/phone.png" alt="Phone icon">
-                                </a>
-                            </div>
+            <article class="mini-window window">
+                <div class="window-header">
+                    <div class="window-buttons" aria-hidden="true">
+                        <span class="close-btn"></span>
+                        <span class="min-btn"></span>
+                        <span class="max-btn"></span>
+                    </div>
+                    Focus
+                    </div>
+                <div class="window-content">
+                    <ul class="clean-list">
+                        <li>Healthcare technology</li>
+                        <li>Industrial automation</li>
+                        <li>Accessible, useful software</li>
+                        <li>Pharmacy and medicine</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="mini-window window">
+                <div class="window-header">
+                    <div class="window-buttons" aria-hidden="true">
+                        <span class="close-btn"></span>
+                        <span class="min-btn"></span>
+                        <span class="max-btn"></span>
+                    </div>
+                    Now
+                    </div>
+                <div class="window-content">
+                    <ul class="clean-list">
+                        <li>Automation Engineer intern at Merck &amp; Co.</li>
+                        <li>AWS Certified Cloud Practitioner</li>
+                        <li>Former Lead Teaching Assistant</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section id="projects" class="page-shell section-block">
+            <div class="section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2>Projects Explorer</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-visual">
+                        <img src="assets/pink_folder.png" alt="" aria-hidden="true">
+                        <span>01</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-kicker">Scheduling / Collaboration</p>
+                        <h3>OVRBOOKD</h3>
+                        <p>
+                            A collaborative event planning app that combines group calendars, smart meeting-time discovery,
+                            and an anonymous Soft Cancel flow for plans everyone is secretly ready to skip.
+                        </p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>UX</span>
+                            <span>Scheduling</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MarilenaHouv/ovrbookd-deploy/tree/main" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                        </div>
+                        </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <img src="assets/pink_folder.png" alt="" aria-hidden="true">
+                        <span>02</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-kicker">Recommendation / Reviews</p>
+                        <h3>MyMovieLover.com</h3>
+                        <p>
+                            A playful movie recommendation website where people can search films, explore ratings and reviews,
+                            and find a next watch through a more personal browsing experience.
+                        </p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>API</span>
+                            <span>Interaction</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MarilenaHouv/my-movie-lover" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="https://wanghci.github.io/project-milestone-2-movielover/index.html" target="_blank"
+                                rel="noreferrer">Live</a>
+                        </div>
+                        </div>
+                        </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <img src="assets/pink_folder.png" alt="" aria-hidden="true">
+                        <span>03</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-kicker">Machine learning</p>
+                        <h3>Spam Email Detection</h3>
+                        <p>
+                            A machine learning project focused on classifying email content as spam or safe using feature
+                            extraction, model training, and performance evaluation.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>ML</span>
+                            <span>Classification</span>
+                            <span>Data</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MarilenaHouv/ML-HAM-SPAM" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                        </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-visual">
+                        <img src="assets/pink_folder.png" alt="" aria-hidden="true">
+                        <span>04</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-kicker">Analytics</p>
+                        <h3>Power BI Dashboard</h3>
+                        <p>
+                            Coming Soon!
+                        </p>
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>Data Viz</span>
+                            <span>Reporting</span>
+                            <span>Insights</span>
+                        </div>
+                        </div>
+                </article>
+                </div>
+        </section>
+
+        <section id="resume" class="page-shell section-block">
+            <div class="window">
+                <div class="window-header">
+                    <div class="window-buttons" aria-hidden="true">
+                        <span class="close-btn"></span>
+                        <span class="min-btn"></span>
+                        <span class="max-btn"></span>
+                    </div>
+                    Full Experience
+                </div>
+                <div class="window-content resume-content">
+                    <div>
+                        <p class="eyebrow">Experience snapshot</p>
+                        <h2>Resume/CV</h2>
+                    </div>
+                    <a href="assets/Houvarda_Eleni_Resume_2026.pdf" class="button button-primary" download>Download PDF</a>
+                    <iframe src="assets/Houvarda_Eleni_Resume_2026.pdf" title="Eleni Houvarda resume PDF"></iframe>
+                    </div>
+                    </div>
+                    </section>
+                    
+                    <section id="socials" class="page-shell section-block">
+                        <div class="section-heading">
+                            <p class="eyebrow">Contact</p>
+                            <h2>My Socials</h2>
+                        </div>
+                        <div class="social-layout">
+                            <div id="tv-shell">
+                                <img id="monitor-screen" src="assets/pink_monitor.png" alt="" aria-hidden="true">
+                                <div class="social-stage">
+                                    <button type="button" class="social-folder linkedin" aria-haspopup="dialog" aria-controls="social-popup"
+                                        data-title="LinkedIn" data-url="https://www.linkedin.com/in/eleni-mhouvarda/"
+                                        data-action="Open LinkedIn">
+                                        <img src="assets/icons/linkedin.png" alt="" aria-hidden="true">
+                        
+                                    </button>
+                                    <button type="button" class="social-folder github" aria-haspopup="dialog" aria-controls="social-popup"
+                                        data-title="GitHub" data-url="https://github.com/MarilenaHouv" data-action="Open GitHub">
+                                        <img src="assets/icons/github.png" alt="" aria-hidden="true">
+                        
+                                    </button>
+                                    <button type="button" class="social-folder email" aria-haspopup="dialog" aria-controls="social-popup"
+                                        data-title="Email" data-url="mailto:eleni.mariah04@gmail.com" data-action="Email Me">
+                                        <img src="assets/icons/email.png" alt="" aria-hidden="true">
+                        
+                                    </button>
+                                    <button type="button" class="social-folder phone" aria-haspopup="dialog" aria-controls="social-popup"
+                                        data-title="Phone" data-url="tel:+18045938726" data-action="Call Me">
+                                        <img src="assets/icons/phone.png" alt="" aria-hidden="true">
+                        
+                                    </button>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="modal-backdrop" id="social-popup" role="dialog" aria-modal="true" aria-labelledby="social-popup-title"
+            hidden>
+            <div class="social-popup window">
+                <div class="window-header">
+                    <div class="window-buttons" aria-hidden="true">
+                        <span class="close-btn"></span>
+                        <span class="min-btn"></span>
+                        <span class="max-btn"></span>
+                    </div>
+                    <span id="social-popup-title">Socials</span>
+                    <button type="button" class="modal-close" id="close-socials" aria-label="Close socials popup">x</button>
+                    </div>
+                <div class="window-content socials-popup-content">
+                    <p id="social-popup-copy">Choose one of my folders to open contact info.</p>
+                    <a href="#" class="button button-primary" id="social-popup-link">Open</a>
+                </div>
+                </div>
+                </div>
     </main>
+    <script>
+        const socialFolders = document.querySelectorAll(".social-folder");
+        const closeSocials = document.getElementById("close-socials");
+        const socialPopup = document.getElementById("social-popup");
+        const socialPopupTitle = document.getElementById("social-popup-title");
+        const socialPopupCopy = document.getElementById("social-popup-copy");
+        const socialPopupLink = document.getElementById("social-popup-link");
+        let lastSocialFolder = null;
+
+        socialFolders.forEach((folder) => {
+            folder.addEventListener("click", () => {
+                lastSocialFolder = folder;
+                socialPopupTitle.textContent = folder.dataset.title;
+                socialPopupCopy.textContent = folder.dataset.url;
+                socialPopupLink.href = folder.dataset.url;
+                socialPopupLink.textContent = folder.dataset.action;
+                if (folder.dataset.url.startsWith("http")) {
+                    socialPopupLink.target = "_blank";
+                    socialPopupLink.rel = "noreferrer";
+                } else {
+                    socialPopupLink.removeAttribute("target");
+                    socialPopupLink.removeAttribute("rel");
+                }
+                socialPopup.hidden = false;
+                closeSocials.focus();
+            });
+        });
+
+        closeSocials.addEventListener("click", () => {
+            socialPopup.hidden = true;
+            if (lastSocialFolder) {
+                lastSocialFolder.focus();
+            }
+        });
+
+        socialPopup.addEventListener("click", (event) => {
+            if (event.target === socialPopup) {
+                socialPopup.hidden = true;
+                if (lastSocialFolder) {
+                    lastSocialFolder.focus();
+                }
+            }
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && !socialPopup.hidden) {
+                socialPopup.hidden = true;
+                if (lastSocialFolder) {
+                    lastSocialFolder.focus();
+                }
+            }
+        });
+    </script>
 </body>
 </html>
